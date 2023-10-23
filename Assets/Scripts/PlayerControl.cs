@@ -31,11 +31,11 @@ public class PlayerControl : MonoBehaviour
 
         if(movement != Vector2.zero)
         {
-            animator.SetBool("Run", true);
+            animator.SetBool(AnimatorParameters.Run, true);
         }
         else
         {
-            animator.SetBool("Run", false);
+            animator.SetBool(AnimatorParameters.Run, false);
         }
 
         if (movement.x < 0)
